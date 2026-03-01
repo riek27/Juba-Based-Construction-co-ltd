@@ -3,234 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Promise Building Co. Ltd</title>
+    <title>Our Services - Ham Construction</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <!-- Header -->
-    <header>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">Promise<span>Building Co. Ltd</span></a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li class="has-dropdown">
-                        <a href="services.html" class="nav-link active">Services <i class="fas fa-chevron-down dropdown-arrow"></i></a>
-                        <ul class="dropdown" id="servicesDropdown">
-                            <li><a href="#construction">Construction</a></li>
-                            <li><a href="#materials">Building Materials</a></li>
-                            <li><a href="#realestate">Real Estate</a></li>
-                            <li><a href="#design">Design Services</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <header id="header">...</header>
 
-    <!-- Mobile Overlay -->
-    <div class="mobile-overlay" id="mobileOverlay"></div>
-
-    <!-- Page Hero -->
-    <section class="page-hero services-bg">
-        <div class="page-hero-content">
-            <h1>Our Professional Services</h1>
-            <p>Your trusted partner in construction, real estate, and building materials supply.</p>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services-section">
+    <section style="padding-top: 150px;">
         <div class="container">
-            <h2 class="section-title fade-in">What We Do</h2>
-            <div class="services-container">
-
-                <!-- Construction -->
-                <div class="service-item fade-in" id="construction">
-                    <div class="service-header">
-                        <h3><i class="fas fa-building service-icon"></i> Construction Services</h3>
-                        <i class="fas fa-chevron-down service-arrow"></i>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-details">
-
-                            <div class="service-subitem">
-                                <h4>House Construction</h4>
-                                <p>We construct durable and modern residential houses using quality materials and professional workmanship.</p>
-                            </div>
-
-                            <div class="service-subitem">
-                                <h4>Fence Construction</h4>
-                                <p>Professional fence building for homes, compounds, schools, farms and commercial properties.</p>
-                            </div>
-
-                            <div class="service-subitem">
-                                <h4>Commercial & Flat Construction</h4>
-                                <p>Construction of flats, apartments and commercial buildings tailored to client requirements.</p>
-                            </div>
-
-                            <div class="service-subitem">
-                                <h4>General Civil Works</h4>
-                                <p>General structural, site work and related engineering services.</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Building Materials -->
-                <div class="service-item fade-in" id="materials">
-                    <div class="service-header">
-                        <h3><i class="fas fa-cubes service-icon"></i> Building Materials Supply</h3>
-                        <i class="fas fa-chevron-down service-arrow"></i>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-details">
-
-                            <div class="service-subitem">
-                                <h4>Concrete Blocks</h4>
-                                <p>High-quality machine–pressed blocks for construction.</p>
-                            </div>
-
-                            <div class="service-subitem">
-                                <h4>Sand & River Sand</h4>
-                                <p>Clean construction sand delivered to site.</p>
-                            </div>
-
-                            <div class="service-subitem">
-                                <h4>Stones & Aggregates</h4>
-                                <p>All sizes of hardcore, gravel and crushed stones.</p>
-                            </div>
-
-                            <div class="service-subitem">
-                                <h4>Marram / Filling Soil</h4>
-                                <p>Earth filling and site leveling materials supplied and delivered.</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Real Estate -->
-                <div class="service-item fade-in" id="realestate">
-                    <div class="service-header">
-                        <h3><i class="fas fa-key service-icon"></i> Real Estate Services</h3>
-                        <i class="fas fa-chevron-down service-arrow"></i>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-details">
-
-                            <div class="service-subitem">
-                                <h4>House Rentals</h4>
-                                <p>We manage and rent residential and commercial properties.</p>
-                            </div>
-
-                            <div class="service-subitem">
-                                <h4>Land Sales</h4>
-                                <p>Secure land buying support including documentation guidance.</p>
-                            </div>
-
-                            <div class="service-subitem">
-                                <h4>House Sales</h4>
-                                <p>Affordable houses for sale in prime and developing locations.</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Design -->
-                <div class="service-item fade-in" id="design">
-                    <div class="service-header">
-                        <h3><i class="fas fa-drafting-compass service-icon"></i> Architectural & Structural Design</h3>
-                        <i class="fas fa-chevron-down service-arrow"></i>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-details">
-
-                            <div class="service-subitem">
-                                <h4>Building Design</h4>
-                                <p>Professional drawings for houses, flats and commercial buildings.</p>
-                            </div>
-
-                            <div class="service-subitem">
-                                <h4>3D Visualization</h4>
-                                <p>Realistic 3D previews before construction begins.</p>
-                            </div>
-
-                            <div class="service-subitem">
-                                <h4>Project Consultation</h4>
-                                <p>Guidance on budgeting, planning and approvals.</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
+            <h2 class="text-center" data-aos="fade-up">Our Comprehensive Services</h2>
+            <div class="services-grid" style="grid-template-columns: repeat(3,1fr);">
+                <div class="service-card"><i class="fas fa-drafting-compass service-icon"></i><h3>Architectural Design</h3><p>Innovative designs tailored to your vision.</p></div>
+                <div class="service-card"><i class="fas fa-hard-hat service-icon"></i><h3>Structural Engineering</h3><p>Robust and safe structures.</p></div>
+                <div class="service-card"><i class="fas fa-home service-icon"></i><h3>Building Construction</h3><p>Full-service construction for residential & commercial.</p></div>
+                <div class="service-card"><i class="fas fa-city service-icon"></i><h3>Residential Homes</h3><p>Luxury homes and apartments.</p></div>
+                <div class="service-card"><i class="fas fa-building service-icon"></i><h3>Commercial Buildings</h3><p>Offices, malls, and industrial.</p></div>
+                <div class="service-card"><i class="fas fa-layer-group service-icon"></i><h3>G+1 Housing Projects</h3><p>Multi-story affordable housing.</p></div>
+                <div class="service-card"><i class="fas fa-trowel service-icon"></i><h3>Real Estate Development</h3><p>Complete land to handover solutions.</p></div>
+                <div class="service-card"><i class="fas fa-paint-roller service-icon"></i><h3>Interior & Exterior Finishing</h3><p>Flawless finishes.</p></div>
+                <div class="service-card"><i class="fas fa-tools service-icon"></i><h3>Renovations</h3><p>Modernize existing structures.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="page-hero" style="height: 50vh; margin-top: 0; background: linear-gradient(rgba(44, 44, 44, 0.8), rgba(44, 44, 44, 0.6)), url('https://images.unsplash.com/photo-1503387769-00a112127ca0?auto=format&fit=crop&w=1950&q=80');">
-        <div class="page-hero-content">
-            <h2 style="font-size: 3rem;">Let’s Build Your Future Together</h2>
-            <p style="font-size: 1.3rem; margin-bottom: 2.5rem;">Contact us today for professional and affordable services.</p>
-            <a href="contact.html" class="btn">Get In Touch</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
+    <section class="cta">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <div class="footer-logo">Promise<span>Building Co. Ltd</span></div>
-                    <p>Delivering quality construction, real estate and building material services with integrity and professionalism.</p>
-                </div>
-
-                <div class="footer-links">
-                    <h3 class="footer-heading">Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h3 class="footer-heading">Contact Info</h3>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Juba, South Sudan</a></li>
-                        <li><a href="tel:+211985119991"><i class="fas fa-phone"></i> +211 985 119 991</a></li>
-                        <li><a href="mailto:info@promisebuilding.com"><i class="fas fa-envelope"></i> info@promisebuilding.com</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="copyright">
-                <p>© 2025 Promise Building Co. Ltd — All Rights Reserved.</p>
-            </div>
+            <h2>Need a Custom Solution?</h2>
+            <p>Contact us to discuss your project requirements.</p>
+            <a href="contact.html" class="btn btn-outline-light">Get a Quote</a>
         </div>
-    </footer>
+    </section>
 
-    <!-- Back to Top -->
-    <a href="#" class="back-to-top" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </a>
-
+    <footer>...</footer>
+    <div class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
