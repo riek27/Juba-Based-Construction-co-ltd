@@ -10,23 +10,65 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .page-hero {
+            height: 50vh;
+            min-height: 400px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            margin-top: 80px;
+        }
+        .page-hero h1 {
+            color: var(--white);
+            font-size: 4rem;
+        }
+        @media (max-width: 768px) {
+            .page-hero h1 { font-size: 3rem; }
+        }
+    </style>
 </head>
 <body>
-    <header id="header">...</header>
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/60x60/d4af37/ffffff?text=HAM" alt="HAM Logo" class="logo-img">
+                <span>HAM<span style="color: var(--gold);">.</span></span>
+            </div>
+            <nav>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <section style="padding-top: 150px;">
+    <div class="page-hero">
+        <h1 data-aos="fade-up">Our Portfolio</h1>
+    </div>
+
+    <section>
         <div class="container">
-            <h2 class="text-center" data-aos="fade-up">Our Portfolio</h2>
-            <div class="gallery-grid" style="grid-template-columns: repeat(3,1fr);">
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Project"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop" alt="Project"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&h=400&fit=crop" alt="Project"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop" alt="Project"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6a72?w=600&h=400&fit=crop" alt="Project"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=600&h=400&fit=crop" alt="Project"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&h=400&fit=crop" alt="Project"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&h=400&fit=crop" alt="Project"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?w=600&h=400&fit=crop" alt="Project"></div>
+            <h2 class="text-center" data-aos="fade-up">Recent Projects</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Project 1"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop" alt="Project 2"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&h=400&fit=crop" alt="Project 3"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop" alt="Project 4"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6a72?w=600&h=400&fit=crop" alt="Project 5"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=600&h=400&fit=crop" alt="Project 6"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&h=400&fit=crop" alt="Project 7"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&h=400&fit=crop" alt="Project 8"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?w=600&h=400&fit=crop" alt="Project 9"></div>
             </div>
         </div>
     </section>
@@ -47,8 +89,53 @@
         </div>
     </div>
 
-    <footer>...</footer>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 20px;">
+                        <img src="https://via.placeholder.com/50x50/d4af37/ffffff?text=HAM" alt="HAM" style="height:50px;">
+                        <span style="color: white;">HAM<span style="color: var(--gold);">.</span></span>
+                    </div>
+                    <p>Building dreams across South Sudan with quality, durability, and excellence.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Building Construction</a></li>
+                        <li><a href="services.html">Residential Homes</a></li>
+                        <li><a href="services.html">Commercial Buildings</a></li>
+                        <li><a href="services.html">G+1 Housing</a></li>
+                        <li><a href="services.html">Renovations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Konyokonyo, Juba, South Sudan</li>
+                        <li><i class="fas fa-phone"></i> +211 925 888 028</li>
+                        <li><i class="fas fa-envelope"></i> info@hamconstruction.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ham Construction & Trading Co. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     <div class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
