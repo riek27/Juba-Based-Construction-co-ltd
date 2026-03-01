@@ -803,9 +803,27 @@ header.scrolled .hamburger {
    10. CTA SECTION
    ============================================ */
 .cta {
-    background: linear-gradient(135deg, var(--dark-charcoal) 0%, var(--charcoal) 100%);
+    position: relative;
+    background: linear-gradient(135deg, var(--dark-charcoal) 0%, var(--charcoal) 100%); /* fallback */
+    background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* subtle parallax effect */
     color: var(--white);
     text-align: center;
+    isolation: isolate; /* creates new stacking context */
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 100%);
+    z-index: -1;
 }
 
 .cta h2 {
