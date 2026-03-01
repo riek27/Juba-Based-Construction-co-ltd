@@ -3,157 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Promise Building Co. Ltd</title>
+    <title>About Us - Ham Construction</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">Promise<span>Building Co. Ltd</span></a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link active">About</a></li>
-                    <li class="has-dropdown">
-                        <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down dropdown-arrow"></i></a>
-                        <ul class="dropdown" id="servicesDropdown">
-                            <li><a href="services.html#construction">Construction</a></li>
-                            <li><a href="services.html#realestate">Real Estate</a></li>
-                            <li><a href="services.html#materials">Building Materials</a></li>
-                            <li><a href="services.html#design">Design</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/60x60/d4af37/ffffff?text=HAM" alt="HAM Logo" class="logo-img">
+                <span>HAM<span style="color: var(--gold);">.</span></span>
+            </div>
+            <nav>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Mobile Overlay -->
-    <div class="mobile-overlay" id="mobileOverlay"></div>
-
-    <!-- Page Hero -->
-    <section class="page-hero about-bg">
-        <div class="page-hero-content">
-            <h1>About Promise Building Co. Ltd</h1>
-            <p>Delivering professional construction, real estate, and building material supply services with integrity and quality workmanship.</p>
+    <section style="padding-top: 150px;">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Our Story</h2>
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop" alt="History">
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <p>Ham Construction & Trading Co. Ltd was established in 2004 by a group of visionary engineers with a mission to rebuild and modernize South Sudan's infrastructure. From our first small residential project in Juba to landmark commercial complexes, we have consistently delivered excellence. Our reputation is built on integrity, timely delivery, and superior craftsmanship.</p>
+                    <p>Today, we employ over 60 full-time professionals and collaborate with international partners to bring global standards to local projects.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about-section">
+    <section style="background: var(--off-white);">
         <div class="container">
-            <div class="about-content fade-in">
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1470&q=80" alt="Construction Team">
+            <h2 class="text-center" data-aos="fade-up">Mission & Vision</h2>
+            <div class="core-values" style="grid-template-columns: repeat(2,1fr);">
+                <div class="value-item" data-aos="fade-right">
+                    <i class="fas fa-bullseye"></i>
+                    <h4>Our Mission</h4>
+                    <p>To provide innovative, sustainable construction solutions that exceed client expectations while contributing to South Sudan's development.</p>
                 </div>
-                <div class="about-text">
-                    <h2>Trusted Construction & Real Estate Services</h2>
+                <div class="value-item" data-aos="fade-left">
+                    <i class="fas fa-eye"></i>
+                    <h4>Our Vision</h4>
+                    <p>To be the most trusted construction company in East Africa, known for quality, safety, and environmental stewardship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <p>Promise Building Co. Ltd is a professional construction and real estate company providing high–quality building services, rental solutions, and supply of building materials. We work with dedication, honesty, and commitment to excellence in every project we undertake.</p>
+    <section>
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Years of Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-item"><h3>22+</h3><p>Years in Business</p></div>
+                <div class="expertise-item"><h3>280+</h3><p>Projects Delivered</p></div>
+                <div class="expertise-item"><h3>100%</h3><p>Client Satisfaction</p></div>
+                <div class="expertise-item"><h3>15</h3><p>Industry Awards</p></div>
+            </div>
+        </div>
+    </section>
 
-                    <p>Our services cover construction of buildings and fences, real estate sales and rentals, sale of land and houses, as well as supply of blocks, marram, stones, sand, and construction aggregates.</p>
+    <section style="background: var(--off-white);">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Our Core Values</h2>
+            <div class="core-values">
+                <div class="value-item"><i class="fas fa-gem"></i><h4>Quality</h4><p>Uncompromising standards in every detail.</p></div>
+                <div class="value-item"><i class="fas fa-handshake"></i><h4>Integrity</h4><p>Honest, transparent dealings with all stakeholders.</p></div>
+                <div class="value-item"><i class="fas fa-users"></i><h4>Teamwork</h4><p>Collaborative approach for best results.</p></div>
+            </div>
+        </div>
+    </section>
 
-                    <p>We focus on customer satisfaction, affordable solutions, and reliable service delivery — ensuring every project meets professional standards and long–lasting quality.</p>
+    <section>
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Our Team of Experts</h2>
+            <p class="text-center" style="max-width: 700px; margin: 0 auto 50px;">Meet the skilled professionals who make our projects possible – from architects to site engineers.</p>
+            <div class="team-grid">
+                <div class="team-member"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Engineer"><h4>John Deng</h4><p>Senior Structural Engineer</p></div>
+                <div class="team-member"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Architect"><h4>Mary Akol</h4><p>Lead Architect</p></div>
+                <div class="team-member"><img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Project Manager"><h4>Peter Malual</h4><p>Project Manager</p></div>
+                <div class="team-member"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Civil Engineer"><h4>Sarah Nyakuma</h4><p>Civil Engineer</p></div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">10+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">100+</div>
-                            <div class="stat-label">Projects Completed</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">100%</div>
-                            <div class="stat-label">Client Satisfaction</div>
-                        </div>
+    <section class="cta">
+        <div class="container">
+            <h2>Join Our Journey</h2>
+            <p>Let's build something great together.</p>
+            <a href="contact.html" class="btn btn-outline-light">Get in Touch</a>
+        </div>
+    </section>
+
+     <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 20px;">
+                        <img src="https://via.placeholder.com/50x50/d4af37/ffffff?text=HAM" alt="HAM" style="height:50px;">
+                        <span style="color: white;">HAM<span style="color: var(--gold);">.</span></span>
                     </div>
+                    <p>Building dreams across South Sudan with quality, durability, and excellence.</p>
                 </div>
-            </div>
-
-            <!-- Mission & Vision -->
-            <div class="about-content fade-in" style="margin-top: 6rem;">
-                <div class="about-text">
-                    <h2>Our Mission & Vision</h2>
-
-                    <p><strong>Mission:</strong> To provide quality construction, reliable real estate services, and affordable building materials while maintaining integrity, professionalism, and customer satisfaction.</p>
-
-                    <p><strong>Vision:</strong> To become one of the most trusted and reliable building and real estate companies — delivering sustainable development and improving communities.</p>
-
-                    <p><strong>Core Values:</strong> Integrity • Quality • Trust • Professionalism • Customer Care</p>
-                </div>
-
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1473&q=80" alt="Construction">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-
-                <div class="footer-about">
-                    <div class="footer-logo">Promise<span>Building Co. Ltd</span></div>
-                    <p>We build quality structures, supply reliable building materials, and provide trusted real estate services for families, businesses, and communities.</p>
-                </div>
-
-                <div class="footer-links">
-                    <h3 class="footer-heading">Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a href="projects.html"><i class="fas fa-chevron-right"></i> Projects</a></li>
-                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-links">
-                    <h3 class="footer-heading">Our Services</h3>
-                    <ul>
-                        <li><a href="services.html#construction"><i class="fas fa-chevron-right"></i> Building Construction</a></li>
-                        <li><a href="services.html#realestate"><i class="fas fa-chevron-right"></i> Property Sales & Rentals</a></li>
-                        <li><a href="services.html#materials"><i class="fas fa-chevron-right"></i> Building Materials Supply</a></li>
-                        <li><a href="services.html#design"><i class="fas fa-chevron-right"></i> Architectural Design</a></li>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Building Construction</a></li>
+                        <li><a href="services.html">Residential Homes</a></li>
+                        <li><a href="services.html">Commercial Buildings</a></li>
+                        <li><a href="services.html">G+1 Housing</a></li>
+                        <li><a href="services.html">Renovations</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-links">
-                    <h3 class="footer-heading">Contact Info</h3>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Juba, South Sudan</a></li>
-                        <li><a href="tel:+211985119991"><i class="fas fa-phone"></i> +211985119991</a></li>
-                        <li><a href="mailto:info@promisebuilding.com"><i class="fas fa-envelope"></i> info@promisebuilding.com</a></li>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Konyokonyo, Juba, South Sudan</li>
+                        <li><i class="fas fa-phone"></i> +211 925 888 028</li>
+                        <li><i class="fas fa-envelope"></i> info@hamconstruction.com</li>
                     </ul>
                 </div>
-
             </div>
-
-            <div class="copyright">
-                <p>© 2025 Promise Building Co. Ltd. All Rights Reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ham Construction & Trading Co. Ltd. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <a href="#" class="back-to-top" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </a>
+    <div class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
