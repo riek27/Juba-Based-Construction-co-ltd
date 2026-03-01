@@ -10,13 +10,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .page-hero {
+            height: 50vh;
+            min-height: 400px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            margin-top: 80px;
+        }
+        .page-hero h1 {
+            color: var(--white);
+            font-size: 4rem;
+        }
+        @media (max-width: 768px) {
+            .page-hero h1 { font-size: 3rem; }
+        }
+    </style>
 </head>
 <body>
-    <header id="header">...</header>
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/60x60/d4af37/ffffff?text=HAM" alt="HAM Logo" class="logo-img">
+                <span>HAM<span style="color: var(--gold);">.</span></span>
+            </div>
+            <nav>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <section style="padding-top: 150px;">
+    <div class="page-hero">
+        <h1 data-aos="fade-up">Get in Touch</h1>
+    </div>
+
+    <section>
         <div class="container">
-            <h2 class="text-center" data-aos="fade-up">Get in Touch</h2>
+            <h2 class="text-center" data-aos="fade-up">We'd Love to Hear From You</h2>
             <div class="contact-grid">
                 <div class="contact-info" data-aos="fade-right">
                     <div class="info-item">
@@ -30,6 +72,10 @@
                     <div class="info-item">
                         <div class="info-icon"><i class="fas fa-envelope"></i></div>
                         <div class="info-text"><h4>Email Us</h4><p>info@hamconstruction.com</p></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div class="info-text"><h4>Working Hours</h4><p>Mon-Fri: 8:00am - 5:00pm<br>Sat: 9:00am - 1:00pm</p></div>
                     </div>
                 </div>
                 <div class="contact-form" data-aos="fade-left">
@@ -53,8 +99,53 @@
         </div>
     </section>
 
-    <footer>...</footer>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 20px;">
+                        <img src="https://via.placeholder.com/50x50/d4af37/ffffff?text=HAM" alt="HAM" style="height:50px;">
+                        <span style="color: white;">HAM<span style="color: var(--gold);">.</span></span>
+                    </div>
+                    <p>Building dreams across South Sudan with quality, durability, and excellence.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Building Construction</a></li>
+                        <li><a href="services.html">Residential Homes</a></li>
+                        <li><a href="services.html">Commercial Buildings</a></li>
+                        <li><a href="services.html">G+1 Housing</a></li>
+                        <li><a href="services.html">Renovations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Konyokonyo, Juba, South Sudan</li>
+                        <li><i class="fas fa-phone"></i> +211 925 888 028</li>
+                        <li><i class="fas fa-envelope"></i> info@hamconstruction.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ham Construction & Trading Co. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     <div class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
