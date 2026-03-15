@@ -3,260 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Ham Construction</title>
+    <title>Our Services - Juba Based Construction Co Ltd</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
     <style>
-        .page-hero {
-            height: 50vh;
-            min-height: 400px;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat fixed;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: var(--white);
+        .service-detail {
             margin-top: 80px;
         }
-        .page-hero h1 {
-            color: var(--white);
-            font-size: 4rem;
-        }
-        .service-detailed-card {
+        .service-detail .service-card-premium {
             background: var(--white);
-            padding: 40px;
-            border-radius: var(--border-radius-xl);
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border: 1px solid rgba(0,0,0,0.02);
+            color: var(--primary);
         }
-        .service-detailed-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-gold);
+        .service-detail .service-content p {
+            color: var(--text-body);
         }
-        .service-detailed-card h3 {
-            font-size: 2rem;
-            color: var(--gold);
+        .cta-section {
+            background: var(--primary);
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+            margin-top: 80px;
+        }
+        .cta-section h2 {
+            color: var(--white);
+            font-size: 2.5rem;
             margin-bottom: 20px;
-        }
-        .service-detailed-card p {
-            color: #5e5e70;
-            margin-bottom: 25px;
-        }
-        .service-list {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        .service-list li {
-            background: var(--light-gray);
-            padding: 10px 20px;
-            border-radius: 50px;
-            font-weight: 500;
-            color: var(--dark-charcoal);
-        }
-        .service-list li i {
-            color: var(--gold);
-            margin-right: 8px;
-        }
-        @media (max-width: 768px) {
-            .page-hero h1 { font-size: 3rem; }
         }
     </style>
 </head>
 <body>
+
     <header id="header">
-        <div class="container header-container">
-            <div class="logo">
-                <img src="assets/hamlogo.jpg" alt="HAM Logo" class="logo-img">
-                <span>HAM<span style="color: var(--gold);">.</span></span>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-helmet-safety"></i>
+                JUBA<span>BASED</span>
+            </a>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
             </div>
             <nav>
-                <div class="hamburger"><i class="fas fa-bars"></i></div>
-                <ul class="nav-menu">
+                <ul class="nav-links" id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html" class="active">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="gallery.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="btn" style="padding: 10px 25px;">Get Quote</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="page-hero">
-        <h1 data-aos="fade-up">Our Expertise</h1>
-    </div>
+    <main>
+        <!-- Page Header -->
+        <section class="page-header" style="background: linear-gradient(rgba(15,23,42,0.9), rgba(15,23,42,0.9)), url('https://image.qwenlm.ai/public_source/2dcac32d-28ef-4df2-aa19-bed6f7e94584/197cf4850-9ce9-453a-bfdf-4f66b4fa312f.png') center/cover; padding: 150px 0 80px; text-align: center; color: var(--white);">
+            <div class="container">
+                <h1 style="font-size: 4rem; color: var(--white);">Our Services</h1>
+                <p style="color: rgba(255,255,255,0.8); font-size: 1.2rem;">Comprehensive construction solutions tailored to your needs</p>
+            </div>
+        </section>
 
-    <section>
-        <div class="container">
-            <h2 class="text-center" data-aos="fade-up">What We Offer</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
-                <!-- Architectural Design -->
-                <div class="service-detailed-card" data-aos="fade-up">
-                    <h3>Architectural Design</h3>
-                    <p>Innovative and functional architectural designs tailored to client needs and local building regulations.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check-circle"></i> Building Design</li>
-                        <li><i class="fas fa-check-circle"></i> Interior Design</li>
-                        <li><i class="fas fa-check-circle"></i> 3D Visualization</li>
-                        <li><i class="fas fa-check-circle"></i> Planning Permission</li>
-                    </ul>
+        <!-- Services Grid (same as homepage) -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">What We Do</span>
+                    <h2 class="main-title">Expertise Across the Board</h2>
                 </div>
-                <!-- Structural Engineering -->
-                <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="50">
-                    <h3>Structural Engineering</h3>
-                    <p>Robust and safe structural solutions using advanced analysis and materials.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check-circle"></i> Foundation Design</li>
-                        <li><i class="fas fa-check-circle"></i> Steel Structures</li>
-                        <li><i class="fas fa-check-circle"></i> Reinforced Concrete</li>
-                        <li><i class="fas fa-check-circle"></i> Seismic Retrofitting</li>
-                    </ul>
-                </div>
-                <!-- Building Construction -->
-                <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Building Construction</h3>
-                    <p>Comprehensive construction services for residential and commercial buildings, from foundations to finishing.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check-circle"></i> Site Preparation</li>
-                        <li><i class="fas fa-check-circle"></i> Masonry & Framing</li>
-                        <li><i class="fas fa-check-circle"></i> MEP Installation</li>
-                        <li><i class="fas fa-check-circle"></i> Finishing Works</li>
-                    </ul>
-                </div>
-                <!-- Residential Homes -->
-                <div class="service-detailed-card" data-aos="fade-up">
-                    <h3>Residential Homes</h3>
-                    <p>Luxury villas, apartments, and housing complexes tailored to modern living.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check-circle"></i> Custom Homes</li>
-                        <li><i class="fas fa-check-circle"></i> Multi-Unit Apartments</li>
-                        <li><i class="fas fa-check-circle"></i> Gated Communities</li>
-                        <li><i class="fas fa-check-circle"></i> Affordable Housing</li>
-                    </ul>
-                </div>
-                <!-- Commercial Buildings -->
-                <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="50">
-                    <h3>Commercial Buildings</h3>
-                    <p>Offices, retail spaces, and industrial structures built for durability and function.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check-circle"></i> Office Complexes</li>
-                        <li><i class="fas fa-check-circle"></i> Shopping Malls</li>
-                        <li><i class="fas fa-check-circle"></i> Warehouses</li>
-                        <li><i class="fas fa-check-circle"></i> Industrial Facilities</li>
-                    </ul>
-                </div>
-                <!-- G+1 Housing Projects -->
-                <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="100">
-                    <h3>G+1 Housing Projects</h3>
-                    <p>Affordable, quality multi-story housing solutions for growing communities.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check-circle"></i> Duplexes</li>
-                        <li><i class="fas fa-check-circle"></i> Row Houses</li>
-                        <li><i class="fas fa-check-circle"></i> Low-Rise Apartments</li>
-                        <li><i class="fas fa-check-circle"></i> Community Planning</li>
-                    </ul>
-                </div>
-                <!-- Real Estate Development -->
-                <div class="service-detailed-card" data-aos="fade-up">
-                    <h3>Real Estate Development</h3>
-                    <p>Complete land to handover solutions, including feasibility studies and project management.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check-circle"></i> Land Acquisition</li>
-                        <li><i class="fas fa-check-circle"></i> Feasibility Studies</li>
-                        <li><i class="fas fa-check-circle"></i> Project Financing</li>
-                        <li><i class="fas fa-check-circle"></i> Turnkey Delivery</li>
-                    </ul>
-                </div>
-                <!-- Renovations -->
-                <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="50">
-                    <h3>Renovations</h3>
-                    <p>Modernize existing structures with updated designs and improved functionality.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check-circle"></i> Home Remodeling</li>
-                        <li><i class="fas fa-check-circle"></i> Office Refurbishment</li>
-                        <li><i class="fas fa-check-circle"></i> Historic Restoration</li>
-                        <li><i class="fas fa-check-circle"></i> Facade Upgrades</li>
-                    </ul>
-                </div>
-                <!-- Interior & Exterior Finishing -->
-                <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Interior & Exterior Finishing</h3>
-                    <p>Flawless finishes that add value and aesthetic appeal to any property.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check-circle"></i> Flooring & Tiling</li>
-                        <li><i class="fas fa-check-circle"></i> Painting & Wallpaper</li>
-                        <li><i class="fas fa-check-circle"></i> Ceiling & Partitions</li>
-                        <li><i class="fas fa-check-circle"></i> Landscaping</li>
-                    </ul>
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card-premium">
+                        <div class="service-img-container">
+                            <img src="https://image.qwenlm.ai/public_source/2dcac32d-28ef-4df2-aa19-bed6f7e94584/14a52cb4f-5fae-45ed-8433-b316dc8f00e2.png" alt="Residential">
+                            <div class="service-overlay-gradient"></div>
+                            <div class="service-icon-box"><i class="fa-solid fa-house-chimney"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Residential Construction</h3>
+                            <p>Designing and building luxury homes, villas, and apartment complexes that blend modern aesthetics with functional living spaces.</p>
+                            <a href="contact.html" class="service-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card-premium">
+                        <div class="service-img-container">
+                            <img src="https://image.qwenlm.ai/public_source/2dcac32d-28ef-4df2-aa19-bed6f7e94584/15f7ce9ca-e30a-42e9-822e-1276928a32e2.png" alt="Commercial">
+                            <div class="service-overlay-gradient"></div>
+                            <div class="service-icon-box"><i class="fa-solid fa-building"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Commercial Buildings</h3>
+                            <p>Constructing office towers, retail malls, and hospitality structures designed to maximize business potential and durability.</p>
+                            <a href="contact.html" class="service-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card-premium">
+                        <div class="service-img-container">
+                            <img src="https://image.qwenlm.ai/public_source/2dcac32d-28ef-4df2-aa19-bed6f7e94584/1916f08db-540d-4c33-8a4d-80b352a07c06.png" alt="Infrastructure">
+                            <div class="service-overlay-gradient"></div>
+                            <div class="service-icon-box"><i class="fa-solid fa-road"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Infrastructure Development</h3>
+                            <p>Heavy civil engineering including road networks, bridges, and public utilities essential for national growth.</p>
+                            <a href="contact.html" class="service-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="service-card-premium">
+                        <div class="service-img-container">
+                            <img src="https://image.qwenlm.ai/public_source/2dcac32d-28ef-4df2-aa19-bed6f7e94584/11fd3f4b9-bf2a-42f8-a47f-b34833948d4d.png" alt="Renovation">
+                            <div class="service-overlay-gradient"></div>
+                            <div class="service-icon-box"><i class="fa-solid fa-paint-roller"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Renovation & Remodeling</h3>
+                            <p>Transforming existing structures into modern, efficient spaces with expert interior and exterior remodeling services.</p>
+                            <a href="contact.html" class="service-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="service-card-premium">
+                        <div class="service-img-container">
+                            <img src="https://image.qwenlm.ai/public_source/2dcac32d-28ef-4df2-aa19-bed6f7e94584/1e0d81c2b-fa0e-4913-8190-d1106d09c034.png" alt="Project Management">
+                            <div class="service-overlay-gradient"></div>
+                            <div class="service-icon-box"><i class="fa-solid fa-clipboard-check"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Project Management</h3>
+                            <p>Comprehensive oversight from conception to handover, ensuring budget adherence, safety compliance, and timeline accuracy.</p>
+                            <a href="contact.html" class="service-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="service-card-premium">
+                        <div class="service-img-container">
+                            <img src="https://image.qwenlm.ai/public_source/2dcac32d-28ef-4df2-aa19-bed6f7e94584/1efdcc303-a277-4d3b-9095-1ae12b3b54aa.png" alt="General Contracting">
+                            <div class="service-overlay-gradient"></div>
+                            <div class="service-icon-box"><i class="fa-solid fa-trowel-bricks"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>General Contracting</h3>
+                            <p>Reliable execution of construction projects of all sizes, managing subcontractors and resources efficiently.</p>
+                            <a href="contact.html" class="service-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="cta">
-        <div class="container">
-            <h2>Need a Custom Solution?</h2>
-            <p>Contact us to discuss your project requirements.</p>
-            <a href="contact.html" class="btn btn-outline-light">Get a Quote</a>
+        <!-- Call to Action -->
+        <div class="cta-section">
+            <div class="container">
+                <h2>Need a Custom Solution?</h2>
+                <p style="color: rgba(255,255,255,0.8); max-width: 700px; margin: 0 auto 30px;">Our team is ready to discuss your specific requirements and provide a tailored plan.</p>
+                <a href="contact.html" class="btn btn-outline" style="border-color: var(--white); color: var(--white);">Request Consultation</a>
+            </div>
         </div>
-    </section>
+    </main>
 
     <footer>
+        <!-- same footer as index -->
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="logo" style="margin-bottom: 20px;">
-                        <img src="assets/hamlogo.jpg" alt="HAM" style="height:50px;">
-                        <span style="color: white;">HAM<span style="color: var(--gold);">.</span></span>
-                    </div>
-                    <p>Building dreams across South Sudan with quality, durability, and excellence.</p>
+                <div>
+                    <a href="index.html" class="footer-logo">JUBA<span>BASED</span></a>
+                    <p class="footer-desc">Leading the way in construction excellence across South Sudan. We build dreams with precision and integrity.</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="gallery.html">Projects</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Our Services</h4>
+                <div>
+                    <h4 class="footer-heading">Services</h4>
                     <ul class="footer-links">
-                        <li><a href="services.html">Building Construction</a></li>
-                        <li><a href="services.html">Residential Homes</a></li>
-                        <li><a href="services.html">Commercial Buildings</a></li>
-                        <li><a href="services.html">G+1 Housing</a></li>
-                        <li><a href="services.html">Renovations</a></li>
+                        <li><a href="services.html">Residential</a></li>
+                        <li><a href="services.html">Commercial</a></li>
+                        <li><a href="services.html">Infrastructure</a></li>
+                        <li><a href="services.html">Renovation</a></li>
+                        <li><a href="services.html">Project Mgmt</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Konyokonyo, Juba, South Sudan</li>
-                        <li><i class="fas fa-phone"></i> +211 925 888 028</li>
-                        <li><i class="fas fa-envelope"></i> info@hamconstruction.com</li>
-                    </ul>
+                <div>
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-desc">Subscribe for industry updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email">
+                        <button><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Ham Construction & Trading Co. Ltd. All rights reserved.</p>
+            <div class="copyright">
+                <p>&copy; 2026 Juba Based Construction Co Ltd. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <div class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></div>
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Project Detail">
+    </div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
