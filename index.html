@@ -94,15 +94,27 @@
           <a href="tel:+17135550192" class="flex items-center gap-2 text-primary hover:text-secondary transition"><div class="w-9 h-9 bg-primary/10 rounded-full flex items-center justify-center"><i data-lucide="phone" class="w-4 h-4"></i></div><span class="text-sm font-semibold">(713) 555-0192</span></a>
           <a href="#quote" class="pulse-btn inline-flex items-center gap-2 bg-secondary hover:bg-yellow-600 text-white text-sm font-semibold px-6 py-2.5 rounded-xl transition-all shadow-md"><i data-lucide="file-text" class="w-4 h-4"></i> Free Quote</a>
         </div>
-        <button id="menu-toggle" class="lg:hidden w-10 h-10 flex items-center justify-center text-primary" aria-label="Menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        <button id="menu-toggle" class="lg:hidden w-10 h-10 flex items-center justify-center text-primary" aria-label="Menu">
+          <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
       </div>
     </div>
     <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 w-[85%] max-w-sm h-full bg-white shadow-2xl z-50 p-7 overflow-y-auto">
-      <button id="menu-close" class="absolute top-5 right-5 w-10 h-10 flex items-center justify-center text-gray-400 hover:text-primary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
-      <div class="mt-16 space-y-5"><a href="#home" class="block text-lg font-medium text-gray-700 hover:text-primary mobile-link">Home</a><a href="#about" class="block text-lg font-medium text-gray-700 hover:text-primary mobile-link">About</a><a href="#services" class="block text-lg font-medium text-gray-700 hover:text-primary mobile-link">Services</a><a href="#gallery" class="block text-lg font-medium text-gray-700 hover:text-primary mobile-link">Gallery</a><a href="#areas" class="block text-lg font-medium text-gray-700 hover:text-primary mobile-link">Areas</a><a href="#contact" class="block text-lg font-medium text-gray-700 hover:text-primary mobile-link">Contact</a></div>
-      <div class="mt-10 space-y-4"><a href="tel:+17135550192" class="flex items-center gap-3 text-primary font-semibold"><i data-lucide="phone" class="w-5 h-5"></i> (713) 555-0192</a><a href="#quote" class="mobile-link block w-full text-center bg-secondary text-white font-semibold py-3 rounded-xl">Free Quote</a></div>
+      <button id="menu-close" class="absolute top-5 right-5 w-10 h-10 flex items-center justify-center text-gray-400 hover:text-primary transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+      <div class="mt-16 space-y-5">
+        <a href="#home" class="block text-lg font-medium text-gray-700 hover:text-primary mobile-link transition-colors">Home</a>
+        <a href="#about" class="block text-lg font-medium text-gray-700 hover:text-primary mobile-link transition-colors">About</a>
+        <a href="#services" class="block text-lg font-medium text-gray-700 hover:text-primary mobile-link transition-colors">Services</a>
+        <a href="#gallery" class="block text-lg font-medium text-gray-700 hover:text-primary mobile-link transition-colors">Gallery</a>
+        <a href="#areas" class="block text-lg font-medium text-gray-700 hover:text-primary mobile-link transition-colors">Areas</a>
+        <a href="#contact" class="block text-lg font-medium text-gray-700 hover:text-primary mobile-link transition-colors">Contact</a>
+      </div>
+      <div class="mt-10 space-y-4">
+        <a href="tel:+17135550192" class="flex items-center gap-3 text-primary font-semibold"><i data-lucide="phone" class="w-5 h-5"></i> (713) 555-0192</a>
+        <a href="#quote" class="mobile-link block w-full text-center bg-secondary hover:bg-yellow-600 text-white font-semibold py-3 rounded-xl transition-colors">Free Quote</a>
+      </div>
     </div>
-    <div id="menu-overlay" class="fixed inset-0 bg-black/40 z-40 hidden"></div>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/40 z-40 hidden transition-opacity"></div>
   </header>
 
   <main>
@@ -151,23 +163,17 @@
           <p class="text-gray-600 mt-5 text-base">From minor repairs to full replacements, our expert team delivers exceptional results.</p>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Service 1: Roof Repair with image -->
           <div class="service-card bg-white shadow-md hover:shadow-xl transition-all"><img src="assets/roofa.jpg" alt="Roof repair Houston" class="service-img"><div class="p-6"><h3 class="font-heading text-xl font-bold text-primary mb-2">Roof Repair</h3><p class="text-gray-600 text-sm mb-4">Fast, reliable repairs for leaks, missing shingles, and storm damage. Prevent costly issues.</p><a href="#quote" class="text-secondary font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">Get Quote →</a></div></div>
-          <!-- Service 2: Roof Replacement -->
           <div class="service-card bg-white shadow-md hover:shadow-xl"><img src="assets/roofaa.jpg" alt="Roof replacement" class="service-img"><div class="p-6"><h3 class="font-heading text-xl font-bold text-primary mb-2">Roof Replacement</h3><p class="text-gray-600 text-sm mb-4">Complete tear-off & premium materials. Boost curb appeal, energy efficiency, and home value.</p><a href="#quote" class="text-secondary font-semibold text-sm inline-flex items-center gap-1 hover:gap-2">Get Quote →</a></div></div>
-          <!-- Service 3: New Installation -->
           <div class="service-card bg-white shadow-md hover:shadow-xl"><img src="assets/roofae.jpg" alt="New roof installation" class="service-img"><div class="p-6"><h3 class="font-heading text-xl font-bold text-primary mb-2">New Installation</h3><p class="text-gray-600 text-sm mb-4">Expert installation for new builds or extensions using top-grade shingles, metal, or tile.</p><a href="#quote" class="text-secondary font-semibold text-sm inline-flex items-center gap-1 hover:gap-2">Get Quote →</a></div></div>
-          <!-- Service 4: Storm Damage -->
           <div class="service-card bg-white shadow-md hover:shadow-xl"><img src="assets/roofer.jpg" alt="Storm damage repair" class="service-img"><div class="p-6"><h3 class="font-heading text-xl font-bold text-primary mb-2">Storm Damage Repair</h3><p class="text-gray-600 text-sm mb-4">Emergency tarping, full restoration, and insurance claim assistance after Houston storms.</p><a href="#quote" class="text-secondary font-semibold text-sm inline-flex items-center gap-1 hover:gap-2">Get Quote →</a></div></div>
-          <!-- Service 5: Roof Inspection -->
           <div class="service-card bg-white shadow-md hover:shadow-xl"><img src="assets/roofaaa.jpg" alt="Roof inspection" class="service-img"><div class="p-6"><h3 class="font-heading text-xl font-bold text-primary mb-2">Roof Inspection</h3><p class="text-gray-600 text-sm mb-4">Detailed reports for homebuyers, insurance claims, or annual maintenance planning.</p><a href="#quote" class="text-secondary font-semibold text-sm inline-flex items-center gap-1 hover:gap-2">Get Quote →</a></div></div>
-          <!-- Service 6: Gutter Services -->
           <div class="service-card bg-white shadow-md hover:shadow-xl"><img src="assets/roofgutter.jpg" alt="Gutter services" class="service-img"><div class="p-6"><h3 class="font-heading text-xl font-bold text-primary mb-2">Gutter Services</h3><p class="text-gray-600 text-sm mb-4">Installation, repair & cleaning to protect your foundation and landscaping.</p><a href="#quote" class="text-secondary font-semibold text-sm inline-flex items-center gap-1 hover:gap-2">Get Quote →</a></div></div>
         </div>
       </div>
     </section>
 
-    <!-- Why Choose Us (with animated icons) -->
+    <!-- Why Choose Us -->
     <section class="py-20 md:py-28 bg-primary text-white"><div class="max-w-7xl mx-auto px-6 text-center"><div class="max-w-2xl mx-auto mb-14"><span class="text-secondary text-sm uppercase tracking-widest">Why choose us</span><h2 class="font-heading text-3xl md:text-5xl font-bold mt-2">The Geah Reat <span class="text-secondary">Difference</span></h2><div class="w-16 h-1 bg-secondary rounded mx-auto mt-4"></div></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"><div class="hover:scale-105 transition-transform"><i data-lucide="shield-check" class="w-12 h-12 text-secondary mx-auto mb-4"></i><h3 class="font-heading text-lg font-bold mb-2">25-Year Warranty</h3><p class="text-white/60 text-sm">Industry-leading workmanship warranty</p></div><div><i data-lucide="badge-dollar-sign" class="w-12 h-12 text-secondary mx-auto mb-4"></i><h3 class="font-heading text-lg font-bold mb-2">Transparent Pricing</h3><p class="text-white/60 text-sm">No hidden fees, honest estimates</p></div><div><i data-lucide="zap" class="w-12 h-12 text-secondary mx-auto mb-4"></i><h3 class="font-heading text-lg font-bold mb-2">Fast Turnaround</h3><p class="text-white/60 text-sm">Most roofs done in 1-2 days</p></div><div><i data-lucide="award" class="w-12 h-12 text-secondary mx-auto mb-4"></i><h3 class="font-heading text-lg font-bold mb-2">Certified Experts</h3><p class="text-white/60 text-sm">GAF Master Elite, Owens Corning</p></div></div></div></section>
 
     <!-- Gallery Section -->
@@ -177,7 +183,7 @@
     <!-- Service Areas with map -->
     <section id="areas" class="py-20 md:py-28 bg-light"><div class="max-w-7xl mx-auto px-6"><div class="grid lg:grid-cols-2 gap-12 items-start"><div class="reveal"><span class="text-secondary text-sm uppercase tracking-widest">Service Areas</span><h2 class="font-heading text-3xl md:text-5xl font-bold text-primary mt-2 mb-4">Serving All of <span class="text-secondary">Greater Houston</span></h2><div class="w-16 h-1 bg-secondary rounded mb-6"></div><p class="text-gray-600 mb-7 text-base">Geah Reat Roofer proudly provides top-quality roofing throughout Houston and surrounding communities.</p><div class="grid grid-cols-2 gap-2.5 mb-8"><div class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i><span class="text-sm">Downtown Houston</span></div><div class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i><span class="text-sm">The Woodlands</span></div><div class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i><span class="text-sm">Sugar Land</span></div><div class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i><span class="text-sm">Katy</span></div><div class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i><span class="text-sm">Pearland</span></div><div class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i><span class="text-sm">Cypress</span></div></div><a href="#quote" class="inline-flex items-center gap-2 bg-primary hover:bg-accent text-white font-semibold px-7 py-3 rounded-xl transition shadow-md">Check If We Serve You →</a></div><div class="reveal sticky top-28"><div class="bg-white rounded-2xl shadow-md overflow-hidden"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222651.12756729593!2d-95.63469055!3d29.81718545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy" title="Houston service area"></iframe></div></div></div></div></section>
 
-    <!-- Testimonials + FAQ -->
+    <!-- Testimonials -->
     <section class="py-20 md:py-28 bg-white"><div class="max-w-7xl mx-auto px-6"><div class="text-center mb-12"><span class="text-secondary text-sm uppercase tracking-widest">Testimonials</span><h2 class="font-heading text-3xl md:text-5xl font-bold text-primary">What <span class="text-secondary">Homeowners Say</span></h2><div class="w-16 h-1 bg-secondary rounded mx-auto mt-3"></div></div><div class="grid md:grid-cols-3 gap-6"><div class="bg-light p-6 rounded-2xl shadow-sm"><div class="flex text-secondary mb-3 text-lg">★★★★★</div><p class="text-gray-600 mb-4 text-sm">"Replaced our entire roof in one day, professional and clean. Highly recommend!"</p><div><div class="font-semibold text-primary">Michael Johnson</div><div class="text-xs text-gray-400">The Woodlands</div></div></div><div class="bg-light p-6 rounded-2xl shadow-sm"><div class="flex text-secondary mb-3">★★★★★</div><p class="text-gray-600 mb-4 text-sm">"Handled storm damage and insurance claim seamlessly. Stress-free experience!"</p><div><div class="font-semibold text-primary">Sarah Rodriguez</div><div class="text-xs text-gray-400">Sugar Land</div></div></div><div class="bg-light p-6 rounded-2xl shadow-sm"><div class="flex text-secondary mb-3">★★★★★</div><p class="text-gray-600 mb-4 text-sm">"Fair pricing, excellent communication, beautiful new roof. Couldn't be happier!"</p><div><div class="font-semibold text-primary">David Williams</div><div class="text-xs text-gray-400">Katy</div></div></div></div></div></section>
 
     <!-- FAQ Accordion -->
@@ -195,19 +201,174 @@
   <button id="back-to-top" class="fixed bottom-6 right-6 w-11 h-11 bg-primary hover:bg-accent text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 translate-y-4 z-40"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg></button>
 
   <script>
-    lucide.createIcons(); document.getElementById('year').textContent = new Date().getFullYear();
-    const toggle = document.getElementById('menu-toggle'), closeBtn = document.getElementById('menu-close'), mobileMenu = document.getElementById('mobile-menu'), overlay = document.getElementById('menu-overlay');
-    function openMenu() { mobileMenu.classList.add('open'); overlay.classList.remove('hidden'); document.body.style.overflow = 'hidden'; }
-    function closeMenu() { mobileMenu.classList.remove('open'); overlay.classList.add('hidden'); document.body.style.overflow = ''; }
-    toggle?.addEventListener('click', openMenu); closeBtn?.addEventListener('click', closeMenu); overlay?.addEventListener('click', closeMenu); document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', closeMenu));
-    const reveals = document.querySelectorAll('.reveal'); const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('active'); observer.unobserve(e.target); } }); }, { threshold: 0.1 }); reveals.forEach(el => observer.observe(el));
-    const counters = document.querySelectorAll('.counter'); const counterObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if(entry.isIntersecting) { const target = parseInt(entry.target.dataset.target); let curr = 0; const step = target / 55; const timer = setInterval(() => { curr += step; if(curr >= target) { entry.target.textContent = target.toLocaleString() + '+'; clearInterval(timer); } else entry.target.textContent = Math.floor(curr).toLocaleString(); }, 30); counterObserver.unobserve(entry.target); } }); }, { threshold: 0.5 }); counters.forEach(c => counterObserver.observe(c));
-    const backBtn = document.getElementById('back-to-top'); window.addEventListener('scroll', () => { if(window.scrollY > 500) backBtn.classList.remove('opacity-0', 'translate-y-4'), backBtn.classList.add('opacity-100', 'translate-y-0'); else backBtn.classList.add('opacity-0', 'translate-y-4'), backBtn.classList.remove('opacity-100', 'translate-y-0'); }); backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-    window.openLightbox = (el) => { const img = el.querySelector('img'); document.getElementById('lightbox-img').src = img.src; document.getElementById('lightbox').classList.add('active'); document.body.style.overflow = 'hidden'; }; window.closeLightbox = () => { document.getElementById('lightbox').classList.remove('active'); document.body.style.overflow = ''; }; document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeLightbox(); });
-    window.toggleFaq = (btn) => { const content = btn.nextElementSibling; const icon = btn.querySelector('.faq-icon'); document.querySelectorAll('.faq-content').forEach(c => { if(c !== content) c.classList.add('hidden'); }); document.querySelectorAll('.faq-icon').forEach(i => { if(i !== icon) i.style.transform = 'rotate(0deg)'; }); content.classList.toggle('hidden'); icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(45deg)'; };
-    document.getElementById('hero-form')?.addEventListener('submit', (e) => { e.preventDefault(); const btn = e.target.querySelector('button'); const orig = btn.innerHTML; btn.innerHTML = '<svg class="w-5 h-5 animate-spin mx-auto" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25"/><path d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" fill="currentColor"/></svg>'; setTimeout(() => { btn.innerHTML = '✓ Quote Requested!'; btn.classList.add('bg-green-600'); setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('bg-green-600'); lucide.createIcons(); }, 2500); }, 1200); });
-    document.getElementById('contact-form')?.addEventListener('submit', (e) => { e.preventDefault(); const btn = e.target.querySelector('button'); const orig = btn.innerHTML; btn.innerHTML = 'Sending...'; setTimeout(() => { btn.innerHTML = '✓ Sent!'; btn.classList.add('bg-green-600'); setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('bg-green-600'); lucide.createIcons(); e.target.reset(); }, 2500); }, 1000); });
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { const targetId = this.getAttribute('href'); if(targetId === '#') return; const target = document.querySelector(targetId); if(target) { e.preventDefault(); const offset = document.getElementById('navbar')?.offsetHeight + 20 || 80; window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' }); } }); });
+    lucide.createIcons(); 
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ======================== IMPROVED MOBILE MENU ========================
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    const menuIcon = document.getElementById('menu-icon');
+
+    function openMenu() {
+      mobileMenu.classList.add('open');
+      menuOverlay.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      // Optional: change menu icon to 'X' (but we keep separate close button)
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      menuOverlay.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Toggle menu when clicking the hamburger button
+    menuToggle?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (mobileMenu.classList.contains('open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    // Close with dedicated close button
+    menuClose?.addEventListener('click', closeMenu);
+    
+    // Close when clicking overlay
+    menuOverlay?.addEventListener('click', closeMenu);
+    
+    // Close when any mobile link is clicked
+    mobileLinks.forEach(link => link.addEventListener('click', closeMenu));
+    
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+        closeMenu();
+      }
+    });
+    
+    // On window resize, if screen becomes larger than 1024px and menu is open, close it
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1024 && mobileMenu.classList.contains('open')) {
+        closeMenu();
+      }
+    });
+
+    // ======================== SCROLL REVEAL ========================
+    const reveals = document.querySelectorAll('.reveal'); 
+    const observer = new IntersectionObserver((entries) => { 
+      entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('active'); observer.unobserve(e.target); } }); 
+    }, { threshold: 0.1 }); 
+    reveals.forEach(el => observer.observe(el));
+
+    // ======================== COUNTERS ========================
+    const counters = document.querySelectorAll('.counter'); 
+    const counterObserver = new IntersectionObserver((entries) => { 
+      entries.forEach(entry => { 
+        if(entry.isIntersecting) { 
+          const target = parseInt(entry.target.dataset.target); 
+          let curr = 0; 
+          const step = target / 55; 
+          const timer = setInterval(() => { 
+            curr += step; 
+            if(curr >= target) { 
+              entry.target.textContent = target.toLocaleString() + '+'; 
+              clearInterval(timer); 
+            } else entry.target.textContent = Math.floor(curr).toLocaleString(); 
+          }, 30); 
+          counterObserver.unobserve(entry.target); 
+        } 
+      }); 
+    }, { threshold: 0.5 }); 
+    counters.forEach(c => counterObserver.observe(c));
+
+    // ======================== BACK TO TOP ========================
+    const backBtn = document.getElementById('back-to-top'); 
+    window.addEventListener('scroll', () => { 
+      if(window.scrollY > 500) { 
+        backBtn.classList.remove('opacity-0', 'translate-y-4'); 
+        backBtn.classList.add('opacity-100', 'translate-y-0'); 
+      } else { 
+        backBtn.classList.add('opacity-0', 'translate-y-4'); 
+        backBtn.classList.remove('opacity-100', 'translate-y-0'); 
+      } 
+    }); 
+    backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // ======================== LIGHTBOX ========================
+    window.openLightbox = (el) => { 
+      const img = el.querySelector('img'); 
+      document.getElementById('lightbox-img').src = img.src; 
+      document.getElementById('lightbox').classList.add('active'); 
+      document.body.style.overflow = 'hidden'; 
+    }; 
+    window.closeLightbox = () => { 
+      document.getElementById('lightbox').classList.remove('active'); 
+      document.body.style.overflow = ''; 
+    }; 
+    document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeLightbox(); });
+
+    // ======================== FAQ TOGGLE ========================
+    window.toggleFaq = (btn) => { 
+      const content = btn.nextElementSibling; 
+      const icon = btn.querySelector('.faq-icon'); 
+      document.querySelectorAll('.faq-content').forEach(c => { if(c !== content) c.classList.add('hidden'); }); 
+      document.querySelectorAll('.faq-icon').forEach(i => { if(i !== icon) i.style.transform = 'rotate(0deg)'; }); 
+      content.classList.toggle('hidden'); 
+      icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(45deg)'; 
+    };
+
+    // ======================== FORM SUBMISSIONS ========================
+    document.getElementById('hero-form')?.addEventListener('submit', (e) => { 
+      e.preventDefault(); 
+      const btn = e.target.querySelector('button'); 
+      const orig = btn.innerHTML; 
+      btn.innerHTML = '<svg class="w-5 h-5 animate-spin mx-auto" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25"/><path d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" fill="currentColor"/></svg>'; 
+      setTimeout(() => { 
+        btn.innerHTML = '✓ Quote Requested!'; 
+        btn.classList.add('bg-green-600'); 
+        setTimeout(() => { 
+          btn.innerHTML = orig; 
+          btn.classList.remove('bg-green-600'); 
+          lucide.createIcons(); 
+        }, 2500); 
+      }, 1200); 
+    });
+
+    document.getElementById('contact-form')?.addEventListener('submit', (e) => { 
+      e.preventDefault(); 
+      const btn = e.target.querySelector('button'); 
+      const orig = btn.innerHTML; 
+      btn.innerHTML = 'Sending...'; 
+      setTimeout(() => { 
+        btn.innerHTML = '✓ Sent!'; 
+        btn.classList.add('bg-green-600'); 
+        setTimeout(() => { 
+          btn.innerHTML = orig; 
+          btn.classList.remove('bg-green-600'); 
+          lucide.createIcons(); 
+          e.target.reset(); 
+        }, 2500); 
+      }, 1000); 
+    });
+
+    // ======================== SMOOTH SCROLL WITH OFFSET ========================
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => { 
+      anchor.addEventListener('click', function(e) { 
+        const targetId = this.getAttribute('href'); 
+        if(targetId === '#') return; 
+        const target = document.querySelector(targetId); 
+        if(target) { 
+          e.preventDefault(); 
+          const offset = document.getElementById('navbar')?.offsetHeight + 20 || 80; 
+          window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' }); 
+        } 
+      }); 
+    });
   </script>
 </body>
 </html>
