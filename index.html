@@ -64,22 +64,14 @@
     .call-now-btn { background: #D4A843; color: white; font-weight: bold; transition: all 0.2s; }
     .call-now-btn:hover { background: #b88a2e; transform: scale(1.02); }
     
-      /* Ultra-light overlay - barely dims the image */
+      /* Make background image clearer */
   .hero-overlay {
-    background: linear-gradient(125deg, rgba(11,59,92,0.08) 0%, rgba(42,127,170,0.05) 50%, rgba(11,59,92,0.06) 100%);
+    background: linear-gradient(125deg, rgba(11,59,92,0.35) 0%, rgba(42,127,170,0.25) 50%, rgba(11,59,92,0.3) 100%);
   }
   
-  /* Strong text shadow + optional semi-transparent dark bar behind text */
+  /* Optional: enhance text readability */
   .hero-text {
-    text-shadow: 0 2px 12px rgba(0,0,0,0.4);
-  }
-  
-  /* Optional: add a very subtle dark gradient behind text area only */
-  .hero-text-backdrop {
-    background: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 100%);
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.25);
   }
     
     /* Trust Bar Sliding Styles – copy this into your CSS file or <style> block */
