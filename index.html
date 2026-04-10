@@ -63,6 +63,91 @@
     @media (max-width: 640px) { .service-img { height: 160px; } }
     .call-now-btn { background: #D4A843; color: white; font-weight: bold; transition: all 0.2s; }
     .call-now-btn:hover { background: #b88a2e; transform: scale(1.02); }
+    /* Trust Bar Sliding Styles – copy this into your CSS file or <style> block */
+.trust-slider-section {
+  background-color: #F0F6FA;   /* bg-warm */
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 2rem 0;             /* py-8 */
+  overflow-x: hidden;
+}
+
+.trust-slider-container {
+  max-width: 80rem;            /* max-w-7xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;        /* px-6 */
+  padding-right: 1.5rem;
+}
+
+.trust-slider-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.trust-slider-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;                   /* gap-8 on mobile, scales up */
+  animation: slideRightToLeft 28s linear infinite;
+  will-change: transform;
+}
+
+/* pause on hover */
+.trust-slider-wrapper:hover .trust-slider-track {
+  animation-play-state: paused;
+}
+
+.trust-label {
+  font-size: 0.75rem;          /* text-xs */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;      /* tracking-wider */
+  color: #6b7280;              /* text-gray-500 */
+}
+
+.trust-item {
+  font-size: 0.875rem;         /* text-sm */
+  font-weight: 700;
+  color: #6b7280;              /* text-gray-500 */
+}
+
+/* keyframes: moves from 0% to -50% for seamless loop */
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* responsive adjustments */
+@media (min-width: 768px) {
+  .trust-slider-track {
+    gap: 3rem;                 /* md:gap-12 */
+  }
+}
+
+@media (max-width: 640px) {
+  .trust-slider-track {
+    gap: 1.5rem;
+  }
+  .trust-item {
+    font-size: 0.75rem;
+  }
+  .trust-label {
+    font-size: 0.7rem;
+  }
+}
+
+/* reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .trust-slider-track {
+    animation: none;
+    transform: translateX(0);
+  }
+}
   </style>
 </head>
 <body class="bg-white text-gray-700 antialiased">
@@ -159,9 +244,35 @@
       <div class="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce"><a href="#about" class="text-white/50 hover:text-white"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg></a></div>
     </section>
 
-    <!-- Trust Bar -->
-    <section class="bg-warm py-8 border-y border-gray-100"><div class="max-w-7xl mx-auto px-6"><div class="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-70"><span class="text-xs font-semibold uppercase tracking-wider text-gray-500">Trusted By</span><span class="text-sm font-bold text-gray-500">BBB A+ Rated</span><span class="text-sm font-bold text-gray-500">GAF Master Elite</span><span class="text-sm font-bold text-gray-500">Owens Corning Preferred</span><span class="text-sm font-bold text-gray-500">HAAG Certified</span></div></div></section>
+    <!-- Trust Bar – sliding right to left with your new content -->
+<section class="trust-slider-section">
+  <div class="trust-slider-container">
+    <div class="trust-slider-wrapper">
+      <div class="trust-slider-track">
+        <!-- first set -->
+        <span class="trust-label">Trusted By</span>
+        <span class="trust-item">BBB A+ Rated</span>
+        <span class="trust-item">GAF Master Elite</span>
+        <span class="trust-item">Owens Corning Preferred</span>
+        <span class="trust-item">HAAG Certified</span>
 
+        <!-- duplicate set for seamless infinite loop -->
+        <span class="trust-label">Trusted By</span>
+        <span class="trust-item">BBB A+ Rated</span>
+        <span class="trust-item">GAF Master Elite</span>
+        <span class="trust-item">Owens Corning Preferred</span>
+        <span class="trust-item">HAAG Certified</span>
+
+        <!-- third set ensures smoothness on wide screens -->
+        <span class="trust-label">Trusted By</span>
+        <span class="trust-item">BBB A+ Rated</span>
+        <span class="trust-item">GAF Master Elite</span>
+        <span class="trust-item">Owens Corning Preferred</span>
+        <span class="trust-item">HAAG Certified</span>
+      </div>
+    </div>
+  </div>
+</section>
     <!-- About Section -->
     <section id="about" class="py-20 md:py-28 bg-white"><div class="max-w-7xl mx-auto px-6"><div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"><div class="reveal relative"><img src="assets/roofa.jpg" alt="Roofing team" class="rounded-2xl shadow-xl w-full h-[380px] md:h-[500px] object-cover"><div class="absolute -bottom-6 -right-4 md:-bottom-8 md:-right-8 bg-primary text-white p-5 md:p-6 rounded-2xl shadow-xl"><div class="text-3xl md:text-4xl font-bold text-secondary">15+</div><div class="text-xs md:text-sm mt-1">Years Serving Houston</div></div></div><div class="reveal"><span class="text-secondary font-semibold text-sm uppercase tracking-widest">About Us</span><h2 class="font-heading text-3xl md:text-5xl font-bold text-primary mt-2 mb-5 leading-tight">Houston's Premier <span class="text-secondary">Roofing Experts</span></h2><div class="w-16 h-1 bg-secondary rounded mb-6"></div><p class="text-gray-600 leading-relaxed mb-5 text-base md:text-lg">Geah Reat Roofer has been Houston's go-to contractor for over 15 years. Built on integrity, quality craftsmanship, and unmatched service.</p><div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8"><div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-secondary"></i><span class="text-sm">Licensed & Insured</span></div><div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-secondary"></i><span class="text-sm">Free Detailed Estimates</span></div><div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-secondary"></i><span class="text-sm">25-Year Warranty</span></div><div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-secondary"></i><span class="text-sm">24/7 Emergency Service</span></div></div><a href="#contact" class="inline-flex items-center gap-2 bg-primary hover:bg-accent text-white font-semibold px-7 py-3.5 rounded-xl transition shadow-md">Learn More <i data-lucide="arrow-right" class="w-5 h-5"></i></a></div></div></div></section>
 
